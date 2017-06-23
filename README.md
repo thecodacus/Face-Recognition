@@ -1,7 +1,7 @@
 # Simple OpenCV Face Recognition in Python
 
 
-Face Recognition tutorial for http://thecodacus.com 
+Face Recognition tutorial refference for http://thecodacus.com 
 
 ### Prerequisites
 * Python 2.x
