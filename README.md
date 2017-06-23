@@ -1,4 +1,4 @@
-# Face-Recognition
+# Simple OpenCV Face Recognition in Python
 
 
 Face Recognition tutorial for http://thecodacus.com 
