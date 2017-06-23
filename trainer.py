@@ -39,5 +39,5 @@ cv2.imshow('test',images[0])
 cv2.waitKey(1)
 
 recognizer.train(images, np.array(labels))
-recognizer.save('trainner/trainner.yml')
+recognizer.save('trainer/trainer.yml')
 cv2.destroyAllWindows()
