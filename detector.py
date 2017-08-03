@@ -4,7 +4,7 @@ from PIL import Image
 import pickle
 
 recognizer = cv2.createLBPHFaceRecognizer()
-recognizer.load('trainner/trainner.yml')
+recognizer.load('trainer/trainer.yml')
 cascadePath = "Classifiers/face.xml"
 faceCascade = cv2.CascadeClassifier(cascadePath);
 path = 'dataSet'
