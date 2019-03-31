@@ -4,9 +4,10 @@
 Face Recognition tutorial refference for http://thecodacus.com 
 
 ### Prerequisites
-* Python 2.x
-* OpenCV 2.x
+* Python 3.6.4
+* OpenCV 3.4.1 or opencv-contrib-python 4.0
 * Numpy
+* Pillow
 
 ### Installing
 
