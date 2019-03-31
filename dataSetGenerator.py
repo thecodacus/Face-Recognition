@@ -1,6 +1,9 @@
 import cv2
+import os
+
+path = os.path.dirname(os.path.abspath(__file__))
 cam = cv2.VideoCapture(0)
-detector=cv2.CascadeClassifier('Classifiers/face.xml')
+detector=cv2.CascadeClassifier(path+r'\Classifiers\face.xml')
 i=0
 offset=50
 name=raw_input('enter your id')
