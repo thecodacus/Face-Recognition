@@ -1,16 +1,16 @@
 import cv2,os
 import numpy as np
 from PIL import Image 
-import pickle
+
+path = os.path.dirname(os.path.abspath(__file__))
 
 recognizer = cv2.createLBPHFaceRecognizer()
-recognizer.load('trainer/trainer.yml')
-cascadePath = "Classifiers/face.xml"
+recognizer.load(path+r'\trainer\trainer.yml')
+cascadePath = path+"\Classifiers\face.xml"
 faceCascade = cv2.CascadeClassifier(cascadePath);
-path = 'dataSet'
 
 cam = cv2.VideoCapture(0)
-font = cv2.cv.InitFont(cv2.cv.CV_FONT_HERSHEY_SIMPLEX, 1, 1, 0, 1, 1) #Creates a font
+font = cv2.CV_FONT_HERSHEY_SIMPLEX #Creates a font
 while True:
     ret, im =cam.read()
     gray=cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
@@ -22,7 +22,7 @@ while True:
              nbr_predicted='Obama'
         elif(nbr_predicted==2):
              nbr_predicted='Anirban'
-        cv2.cv.PutText(cv2.cv.fromarray(im),str(nbr_predicted)+"--"+str(conf), (x,y+h),font, 255) #Draw the text
+        cv2.PutText(im,str(nbr_predicted)+"--"+str(conf), (x,y+h),font, 1.1, (0,255,0)) #Draw the text
         cv2.imshow('im',im)
         cv2.waitKey(10)
 
