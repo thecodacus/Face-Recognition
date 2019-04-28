@@ -23,3 +23,4 @@ Face Recognition tutorial refference for http://thecodacus.com
 ## Authors
 
 * **[Anirban Kar](http://thecodacus.com/author/admin/)**
+* **[P.T.C.M. Tholhuijsen](https://github.com/mandjevant/)**
